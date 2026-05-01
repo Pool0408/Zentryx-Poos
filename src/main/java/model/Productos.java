@@ -2,6 +2,7 @@ package model;
 
 public class Productos {
     //!ATRIBUTOS
+    private int id;
     private String nombre;
     private String categoria;
     private Double precio;
@@ -11,13 +12,22 @@ public class Productos {
     public Productos() {
     }
     //?Constructor lleno
-    public Productos(String nombre, String categoria, Double precio, int stock) {
+    public Productos(int id, String nombre, String categoria, Double precio, int stock) {
+        this.id = id;
         this.nombre = nombre;
         this.categoria = categoria;
         this.precio = precio;
         this.stock = stock;
     }
     //!GETTERS AND SETTERS
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public String getNombre() {
         return nombre;
     }
