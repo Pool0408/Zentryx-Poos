@@ -21,7 +21,7 @@ public class UsuariosDAO {
             ResultSet rs =ps.executeQuery();
             if (rs.next()){
                 usuario1=new Usuarios();
-                usuario1.setNombre(rs.getString("username"));
+                usuario1.setNombre(rs.getString("usuario"));
                 usuario1.setContrasena(rs.getString("contrasena"));
             }
         }catch (SQLException e){
